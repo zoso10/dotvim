@@ -1,0 +1,15 @@
+[submodule "bundle/rails.vim"]
+	path = bundle/rails.vim
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/bundler.vim"]
+	path = bundle/bundler.vim
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/ag"]
+	path = bundle/ag
+	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
