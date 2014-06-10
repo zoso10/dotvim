@@ -22,3 +22,6 @@ set ruler
 
 " Remap CtrlP so it's easier to run
 let g:ctrlp_map = '<c-p>'
+
+" Always show status line
+set laststatus=2
