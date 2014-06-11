@@ -25,3 +25,10 @@ let g:ctrlp_map = '<c-p>'
 
 " Always show status line
 set laststatus=2
+
+" For easier movement between windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
