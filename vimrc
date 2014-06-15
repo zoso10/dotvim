@@ -8,6 +8,9 @@ set nocompatible
 " Everybody needs line numbers
 set nu
 
+" Remap the Leader
+let mapleader=","
+
 " Switch syntax highlighting on
 syntax on
 
