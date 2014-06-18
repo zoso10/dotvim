@@ -41,4 +41,9 @@ map <C-l> <C-w>l
 "colorscheme solarized
 "let g:solarized_termcolors=256
 
+" Allow switching buffers that aren't saved
 set hidden
+
+" Show hidden files with CtrlP
+let g:ctrlp_show_hidden=1
+
