@@ -41,16 +41,14 @@ map <C-l> <C-w>l
 "colorscheme solarized
 "let g:solarized_termcolors=256
 
-<<<<<<< HEAD
 " Fix tabs
 set tabstop=2
 set shiftwidth=2
 set expandtab
-=======
+
 " Allow switching buffers that aren't saved
 set hidden
 
 " Show hidden files with CtrlP
 let g:ctrlp_show_hidden=1
->>>>>>> fefb1f4421f99b1a9bb4bc96dd3f7c056203d3d2
 
