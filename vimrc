@@ -41,3 +41,4 @@ map <C-l> <C-w>l
 "colorscheme solarized
 "let g:solarized_termcolors=256
 
+set hidden
