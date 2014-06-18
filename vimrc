@@ -41,3 +41,8 @@ map <C-l> <C-w>l
 "colorscheme solarized
 "let g:solarized_termcolors=256
 
+" Fix tabs
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
