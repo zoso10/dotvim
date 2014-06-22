@@ -36,10 +36,10 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Let's change the color scheme
-"syntax enable
-"set background=dark
-"colorscheme solarized
-"let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized 
+let g:solarized_termcolors=256
 
 " Fix tabs
 set tabstop=2
