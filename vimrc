@@ -57,3 +57,6 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 set t_Co=256
 set linespace=0
+
+" Add cursor line
+set cursorline
