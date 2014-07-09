@@ -60,3 +60,7 @@ set linespace=0
 
 " Add cursor line
 set cursorline
+
+" Convert old Ruby hash rockets
+nmap <Leader>h :s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
+vmap <Leader>h :'<,'>s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
