@@ -53,10 +53,14 @@ let g:ctrlp_show_hidden=1
 
 " Airline
 let g:airline_powerline_fonts=1
+if !exists('g:airline_symbols')
+  let g:airline_symbols={}
+endif
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 set t_Co=256
 set linespace=0
+set encoding=utf-8
 
 " Add cursor line
 set cursorline

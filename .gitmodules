@@ -22,6 +22,6 @@
 [submodule "bundle/monokai"]
 	path = bundle/monokai
 	url = https://github.com/sickill/vim-monokai.git
-[submodule "/Users/tewing/.vim/bundle/vim-airline"]
-	path = /Users/tewing/.vim/bundle/vim-airline
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
