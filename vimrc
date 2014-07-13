@@ -9,7 +9,7 @@ set nocompatible
 set nu
 
 " Remap the Leader
-let mapleader=","
+let mapleader=" "
 
 " Switch syntax highlighting on
 syntax on
