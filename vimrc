@@ -68,3 +68,10 @@ set cursorline
 " Convert old Ruby hash rockets
 nmap <Leader>h :s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
 vmap <Leader>h :'<,'>s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
+
+" Make Vim faster
+set ttyfast
+set lazyredraw
+
+" Specify RVM path
+let g:ruby_path="~/.rvm/bin/ruby"
