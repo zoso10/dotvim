@@ -1,3 +1,4 @@
+set shell=/bin/bash
 " Let's load plugins with pathogen
 call pathogen#infect()
 call pathogen#helptags()
