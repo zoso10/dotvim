@@ -76,6 +76,9 @@ set lazyredraw
 " Specify RVM path
 let g:ruby_path="~/.rvm/bin/ruby"
 
+let g:rspec_command="!bundle exec rspec {spec}"
+let g:rspec_runner="os_x_iterm"
+
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
