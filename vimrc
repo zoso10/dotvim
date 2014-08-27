@@ -85,3 +85,8 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Make Ag and CtrlP better
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l -g ""'
+endif
