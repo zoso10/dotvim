@@ -90,3 +90,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l -g ""'
 endif
+
+" Leader mapping for saving
+map <Leader>w :w<cr>
+
+" Override read-only permissions on files
+cmap w!! %sudo tee > /dev/null %
