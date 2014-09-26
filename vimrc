@@ -92,11 +92,13 @@ if executable('ag')
 endif
 
 " Leader mappings
-map <Leader>w :w<CR>
-map <Leader>q :q<CR>
-map <Leader>o :!open .<CR><CR>
-map <Leader>s :sp<CR>
-map <Leader>v :vs<CR>
+nmap <Leader>w :w<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>o :!open .<CR><CR>
+nmap <Leader>s :sp<CR>
+nmap <Leader>v :vs<CR>
+nnoremap <Leader>ww :wq<CR>
+nnoremap <Leader>qq :qa!<CR>
 
 " Override read-only permissions on files
 cmap w!! %sudo tee > /dev/null %
