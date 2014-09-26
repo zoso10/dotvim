@@ -95,6 +95,8 @@ endif
 map <Leader>w :w<CR>
 map <Leader>q :q<CR>
 map <Leader>o :!open .<CR><CR>
+map <Leader>s :sp<CR>
+map <Leader>v :vs<CR>
 
 " Override read-only permissions on files
 cmap w!! %sudo tee > /dev/null %
