@@ -78,7 +78,7 @@ set lazyredraw
 let g:ruby_path="~/.rvm/bin/ruby"
 
 " Rspec send to tmux
-let g:rspec_command="!bundle exec rspec {spec}"
+let g:rspec_command='call Send_to_Tmux("ber {spec}\n")'
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
