@@ -106,3 +106,6 @@ nnoremap <Leader>qq :qa<CR>
 
 " Override read-only permissions on files
 cmap w!! %sudo tee > /dev/null %
+
+" NERDTree Toggle
+nmap <Leader>n :NERDTreeToggle
