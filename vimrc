@@ -108,4 +108,4 @@ nnoremap <Leader>qq :qa<CR>
 cmap w!! %sudo tee > /dev/null %
 
 " NERDTree Toggle
-nmap <Leader>n :NERDTreeToggle
+nmap <Leader>n :NERDTreeToggle<CR>
