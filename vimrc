@@ -36,7 +36,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Let's change the color scheme
+" use Solarized dark for colorscheme
 syntax enable
 colorscheme solarized 
 set background=dark
@@ -109,3 +109,7 @@ cmap w!! %sudo tee > /dev/null %
 
 " NERDTree Toggle
 nmap <Leader>n :NERDTreeToggle<CR>
+
+" Better searching
+set incsearch
+set hlsearch
