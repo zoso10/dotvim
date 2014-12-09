@@ -113,4 +113,4 @@ nmap <Leader>n :NERDTreeToggle<CR>
 " Better searching
 set incsearch
 set hlsearch
-nmap <Leader>h :noh<CR>
+nmap <Leader>a :noh<CR>
