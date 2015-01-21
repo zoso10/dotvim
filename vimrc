@@ -114,3 +114,6 @@ nmap <Leader>n :NERDTreeToggle<CR>
 set incsearch
 set hlsearch
 nmap <Leader>a :noh<CR>
+
+" Syntax highlighting for JSON files
+autocmd BufNewFile,BufRead *.json set ft=javascript
