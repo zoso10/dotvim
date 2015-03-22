@@ -101,7 +101,7 @@ nmap <Leader>o :!open .<CR><CR>
 nmap <Leader>s :sp<CR>
 nmap <Leader>v :vs<CR>
 nnoremap <Leader>wq :wq<CR>
-nnoremap <Leader>ww :wa<CR>
+nnoremap <Leader>wa :wa<CR>
 nnoremap <Leader>qq :qa<CR>
 
 " Override read-only permissions on files
