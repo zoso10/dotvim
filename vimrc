@@ -120,3 +120,6 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " Fix indentation for <li> and <p> tags
 let g:html_indent_tags = 'li\|p'
+
+" Leader for generating ctags
+map <Leader>c :!ctags -R<CR><CR>
