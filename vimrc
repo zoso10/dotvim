@@ -117,3 +117,6 @@ nmap <Leader>a :noh<CR>
 
 " Syntax highlighting for JSON files
 autocmd BufNewFile,BufRead *.json set ft=javascript
+
+" Fix indentation for <li> and <p> tags
+let g:html_indent_tags = 'li\|p'
