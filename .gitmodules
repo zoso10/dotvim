@@ -40,3 +40,6 @@
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
