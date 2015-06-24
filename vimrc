@@ -123,3 +123,6 @@ let g:html_indent_tags = 'li\|p'
 
 " Leader for generating ctags
 map <Leader>c :!ctags -R<CR><CR>
+
+" Treat .rabl as .rb
+au BufRead,BufNewFile *.rabl setf ruby
