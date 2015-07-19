@@ -126,3 +126,6 @@ map <Leader>c :!ctags -R<CR><CR>
 
 " Treat .rabl as .rb
 au BufRead,BufNewFile *.rabl setf ruby
+
+" Elixir specific
+nmap <Leader>mt :!mix test<CR>
