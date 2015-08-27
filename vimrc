@@ -135,5 +135,3 @@ set scrolloff=5
 
 " Highlight column 80
 set cc=80
-" Highlight column 120 for ezCater
-set cc=120
