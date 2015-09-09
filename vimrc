@@ -135,3 +135,48 @@ set scrolloff=5
 
 " Highlight column 80
 set cc=80
+
+" Inline variable
+function! InlineVariable()
+  normal ^*``
+  normal 2w
+  normal "zDdd``
+  normal cwz
+endfunction
+
+map <Leader>i :call InlineVariable()<CR>
+
+" WIP
+" Extract method
+"function! ExtractMethod() range
+"  let param_string = ''
+"
+"
+"  let [lnum1, col1] = getpos("'<")[1:2]
+"  let [lnum2, col2] = getpos("'>")[1:2]
+"  let lines = getline(lnum1, lnum2)
+"  let lines[-1] = lines[-1][: col2 - (&selection == 'inclusive' ? 1 : 2)]
+"  let lines[0] = lines[0][col1 - 1:]
+"  let body = join(lines, "\n")
+"
+"
+"  call inputsave()
+"  let method_name = input('Method name: ')
+"  let param_list = input('Enter params: ')
+"  call inputrestore()
+"
+"  if param_list != ''
+"    let param_string = '(' . param_list . ')'
+"  endif
+"
+"  normal }
+"  call setline('.', 'def ' . method_name . param_string)
+"  call append('.', body)
+"  call append('.', 'end')
+"  "normal p
+"  "normal oz
+"  "normal oend
+"
+"endfunction
+"
+"map <Leader>e :call ExtractMethod()<CR>
