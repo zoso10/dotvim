@@ -46,3 +46,6 @@
 [submodule "bundle/vim-windowswap"]
 	path = bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap
+[submodule "bundle/vim-deckset"]
+	path = bundle/vim-deckset
+	url = https://github.com/omega/vim-deckset
