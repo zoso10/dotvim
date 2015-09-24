@@ -82,7 +82,7 @@ let g:rspec_command='call Send_to_Tmux("ber {spec}\n")'
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>n :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
@@ -97,7 +97,6 @@ endif
 " Leader mappings
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>o :!open .<CR><CR>
 nmap <Leader>s :sp<CR>
 nmap <Leader>v :vs<CR>
 nnoremap <Leader>wq :wq<CR>
@@ -108,7 +107,7 @@ nnoremap <Leader>qq :qa<CR>
 cmap w!! %sudo tee > /dev/null %
 
 " NERDTree Toggle
-nmap <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>o :NERDTreeToggle<CR>
 
 " Better searching
 set incsearch
