@@ -179,3 +179,6 @@ function! ExtractMethod() range
 endfunction
 
 map <Leader>e :call ExtractMethod()<CR>
+
+" Set menu for filename tab completion
+set wildmenu
