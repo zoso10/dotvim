@@ -25,9 +25,6 @@
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json
-[submodule "bundle/vim-node"]
-	path = bundle/vim-node
-	url = https://github.com/moll/vim-node
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec
