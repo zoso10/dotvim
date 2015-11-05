@@ -182,3 +182,6 @@ map <Leader>e :call ExtractMethod()<CR>
 
 " Set menu for filename tab completion
 set wildmenu
+
+" Leader for closing buffes
+map <Leader>b :bd<CR>
