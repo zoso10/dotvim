@@ -183,5 +183,49 @@ map <Leader>e :call ExtractMethod()<CR>
 " Set menu for filename tab completion
 set wildmenu
 
-" Leader for closing buffes
+" Leader for closing buffers
 map <Leader>b :bd<CR>
+
+" Create method stub
+function! CreateMethodStub()
+  let return_string = ''
+
+  normal ^
+  let object = expand("<cword>")
+
+  call inputsave()
+  let stubbed_method = input('Method: ')
+  let return_value = input('Return Value: ')
+  call inputrestore()
+
+  if return_value != ''
+    let return_string = '.and_return(' . return_value . ')'
+  endif
+
+  normal o
+  call setline('.', 'allow(' . object . ').to receive(:' . stubbed_method . ')' . return_string)
+  normal ==
+endfunction
+
+function! CreateMethodExpectation()
+  let arguments_string = ''
+  call inputsave()
+  let arguments_received = input('Arguments received: ')
+  call inputrestore()
+
+  if arguments_received != ''
+    let arguments_string = '.with(' . arguments_received . ')'
+  endif
+
+  let method_stub_line = getline('.')
+  let method_stub_line = substitute(method_stub_line, 'allow', 'expect', '')
+  let method_stub_line = substitute(method_stub_line, 'receive', 'have_received', '')
+  let method_stub_line = substitute(method_stub_line, '.and_return.*', '', '')
+
+  normal o
+  call setline('.', method_stub_line . arguments_string)
+  normal ==
+endfunction
+
+map <Leader>ms :call CreateMethodStub()<CR>
+map <Leader>me :call CreateMethodExpectation()<CR>
