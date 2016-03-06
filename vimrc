@@ -78,13 +78,12 @@ set lazyredraw
 let g:ruby_path="~/.rvm/bin/ruby"
 
 " Rspec send to tmux
-let g:rspec_command='call Send_to_Tmux("ber {spec}\n")'
+let g:rspec_command='call Send_to_Tmux("bundle exec rspec {spec}\n")'
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>n :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
 " Mappings for Rake
 map <Leader>r :Rake<CR>
@@ -99,8 +98,6 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>s :sp<CR>
 nmap <Leader>v :vs<CR>
-nnoremap <Leader>wq :wq<CR>
-nnoremap <Leader>wa :wa<CR>
 nnoremap <Leader>qq :qa<CR>
 
 " Override read-only permissions on files
