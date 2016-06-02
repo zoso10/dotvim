@@ -118,7 +118,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 let g:html_indent_tags = 'li\|p'
 
 " Leader for generating ctags
-map <Leader>c :!ctags -R --exclude=app/assets/javascripts --exclude=.git --exclude=spec/javascripts --exclude=db .<CR><CR>
+map <Leader>c :!ctags -R --exclude=app/assets/javascripts --exclude=.git --exclude=spec/javascripts --exclude=db --exclude=tmp .<CR><CR>
 
 " Treat .rabl as .rb
 au BufRead,BufNewFile *.rabl setf ruby
