@@ -38,7 +38,7 @@ map <C-l> <C-w>l
 
 " use Solarized dark for colorscheme
 syntax enable
-colorscheme solarized 
+colorscheme solarized
 set background=dark
 
 " Fix tabs
@@ -58,10 +58,15 @@ if !exists('g:airline_symbols')
   let g:airline_symbols={}
 endif
 let g:airline_theme='solarized'
-let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#enabled=0
+let g:airline_section_c = airline#section#create(['%t'])
+let g:airline_section_y = ''
 set t_Co=256
 set linespace=0
 set encoding=utf-8
+
+" Hide vim tabline altogether
+set showtabline=0
 
 " Add cursor line
 set cursorline
