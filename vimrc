@@ -7,7 +7,8 @@ call pathogen#helptags()
 set nocompatible
 
 " Everybody needs line numbers
-set rnu
+set relativenumber
+set number
 
 " Remap the Leader
 let mapleader=" "
