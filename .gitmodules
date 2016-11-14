@@ -46,6 +46,3 @@
 [submodule "bundle/elm.vim"]
 	path = bundle/elm.vim
 	url = https://github.com/lambdatoast/elm.vim.git
-[submodule "bundle/hclfmt"]
-	path = bundle/hclfmt
-	url = https://github.com/fatih/vim-hclfmt.git
