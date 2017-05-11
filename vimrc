@@ -73,8 +73,8 @@ set showtabline=0
 set cursorline
 
 " Convert old Ruby hash rockets
-nmap <Leader>h :s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
-vmap <Leader>h :'<,'>s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
+nmap <Leader>h :s/\:\([a-zA-Z_]*\)\s\?=>/\1\:/g<cr>
+vmap <Leader>h :'<,'>s/\:\([a-zA-Z_]*\)\s\?=>/\1\:/g<cr>
 
 " Make Vim faster
 set ttyfast
@@ -124,7 +124,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 let g:html_indent_tags = 'li\|p'
 
 " Leader for generating ctags
-map <Leader>c :!ctags -R --exclude=app/assets/javascripts --exclude=.git --exclude=spec/javascripts --exclude=db --exclude=tmp .<CR><CR>
+map <Leader>c :!ctags -R --exclude=app/assets/javascripts --exclude=.git --exclude=spec/javascripts --exclude=db --exclude=tmp --exclude=vendor/assets.<CR><CR>
 
 " Treat .rabl as .rb
 au BufRead,BufNewFile *.rabl setf ruby
@@ -232,3 +232,8 @@ endfunction
 
 map <Leader>ms :call CreateMethodStub()<CR>
 map <Leader>me :call CreateMethodExpectation()<CR>
+
+" Break into multiple lines
+function! BreakIntoMultipleLines()
+  normal ^f(a^M^[:s/, /,\r/g^M$i^M^[
+endfunction
