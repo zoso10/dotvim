@@ -37,10 +37,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" use Solarized dark for colorscheme
+" use Dracula for colorscheme
 syntax enable
-colorscheme solarized
+color dracula
 set background=dark
+hi Normal guibg=NONE ctermbg=NONE
 
 " Fix tabs
 set tabstop=2
