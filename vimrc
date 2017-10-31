@@ -93,7 +93,7 @@ map <Leader>n :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 
 " Mappings for Rake
-function RunRubocopOnCurrentFile()
+function! RunRubocopOnCurrentFile()
   let l:rubocop_command='call Send_to_Tmux("rubocop {file}\n")'
   let l:file=@% " Assume current file for now
   execute substitute(l:rubocop_command, "{file}", l:file, "g")
