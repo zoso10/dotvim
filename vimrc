@@ -39,7 +39,7 @@ map <C-l> <C-w>l
 
 " use Dracula for colorscheme
 syntax enable
-color dracula
+color solarized
 set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 
