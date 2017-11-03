@@ -61,8 +61,33 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=0
-let g:airline_section_c = airline#section#create(['%t'])
+let g:airline_section_c = '%f'
 let g:airline_section_y = ''
+
+"set statusline=
+"set statusline+=%{mode()}
+"set statusline+=%{StatuslineBranch()}
+"set statusline+=%#LineNr#
+"set statusline+=\ %f
+"set statusline+=\ %m
+"
+"set statusline+=%= 
+"
+"set statusline+=\ %y
+"set statusline+=\ %c
+"set statusline+=\ %p
+"set statusline+=%{'%'}
+
+function! StatuslineBranch()
+  let l:branchname = GitBranch()
+  let l:branch_symbol = "\ue0a0"
+  return strlen(l:branchname) > 0?'  '.l:branch_symbol.' '.l:branchname.' ':''
+endfunction
+
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
 set t_Co=256
 set linespace=0
 set encoding=utf-8
