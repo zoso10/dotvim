@@ -1,4 +1,4 @@
-set shell=/bin/bash
+set shell=/bin/zsh
 " Let's load plugins with pathogen
 call pathogen#infect()
 call pathogen#helptags()
