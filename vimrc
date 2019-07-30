@@ -151,6 +151,9 @@ nmap <Leader>a :noh<CR>
 " Syntax highlighting for JSON files
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" paste magic string comment for new ruby files
+autocmd BufNewFile *.rb :normal i# frozen_string_literal: true
+
 " Fix indentation for <li> and <p> tags
 let g:html_indent_tags = 'li\|p'
 

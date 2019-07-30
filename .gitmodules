@@ -58,3 +58,9 @@
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "bundle/floobits-neovim"]
+	path = bundle/floobits-neovim
+	url = https://github.com/Floobits/floobits-neovim.git
+[submodule "bundle/Floobits"]
+	path = bundle/Floobits
+	url = https://github.com/Floobits/floobits-vim
