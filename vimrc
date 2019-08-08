@@ -166,9 +166,6 @@ au BufRead,BufNewFile *.rabl setf ruby
 " Elixir specific
 nmap <Leader>mt :!mix test<CR>
 
-" Scroll offset
-set scrolloff=5
-
 " Highlight column 80
 set cc=80
 
