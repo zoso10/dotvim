@@ -25,27 +25,27 @@
 [submodule "pack/plugins/start/rails.vim"]
 	path = pack/plugins/start/rails.vim
 	url = https://github.com/tpope/vim-rails.git
-[submodule "tslime.vim"]
-	path = pack/plugins/start/tslime.vim
-	url = https://github.com/jgdavey/tslime.vim.git
 [submodule "pack/plugins/start/vim-airline"]
 	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim-airline-themes"]
+[submodule "pack/plugins/start/tslime.vim"]
+	path = pack/plugins/start/tslime.vim
+	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "pack/plugins/start/vim-airline-themes"]
 	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "vim-json"]
+[submodule "pack/plugins/start/vim-json"]
 	path = pack/plugins/start/vim-json
 	url = https://github.com/elzr/vim-json.git
-[submodule "vim-rspec"]
+[submodule "pack/plugins/start/vim-rspec"]
 	path = pack/plugins/start/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
-[submodule "vim-surround"]
+[submodule "pack/plugins/start/vim-surround"]
 	path = pack/plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "vim-terraform"]
+[submodule "pack/plugins/start/vim-terraform"]
 	path = pack/plugins/start/vim-terraform
-	url = https://github.com/hashivim/vim-terraform.git
-[submodule "vim-tmux-navigator"]
+	url = https://github.com/hashivim/vim-terraform
+[submodule "pack/plugins/start/vim-tmux-navigator"]
 	path = pack/plugins/start/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
+	url = https://github.com/christoomey/vim-tmux-navigator
