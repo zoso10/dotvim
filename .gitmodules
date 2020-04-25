@@ -58,3 +58,48 @@
 [submodule "bundle/floobits-neovim"]
 	path = bundle/floobits-neovim
 	url = https://github.com/Floobits/floobits-neovim.git
+[submodule "pack/plugins/start/vim-colors-solarized"]
+	path = pack/plugins/start/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "pack/plugins/start/ag"]
+	path = pack/plugins/start/ag
+	url = https://github.com/rking/ag.vim.git
+[submodule "pack/plugins/start/bundler.vim"]
+	path = pack/plugins/start/bundler.vim
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "pack/plugins/start/ctrlp"]
+	path = pack/plugins/start/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "pack/plugins/start/fugitive"]
+	path = pack/plugins/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/plugins/start/rails.vim"]
+	path = pack/plugins/start/rails.vim
+	url = https://github.com/tpope/vim-rails.git
+[submodule "tslime.vim"]
+	path = pack/plugins/start/tslime.vim
+	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "pack/plugins/start/vim-airline"]
+	path = pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim-airline-themes"]
+	path = pack/plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim-json"]
+	path = pack/plugins/start/vim-json
+	url = https://github.com/elzr/vim-json.git
+[submodule "vim-rspec"]
+	path = pack/plugins/start/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "vim-surround"]
+	path = pack/plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim-terraform"]
+	path = pack/plugins/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
+[submodule "vim-tmux-navigator"]
+	path = pack/plugins/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
