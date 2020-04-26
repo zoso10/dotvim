@@ -60,6 +60,7 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=0
 let g:airline_section_c = '%f'
 let g:airline_section_y = ''
+let g:airline_section_z = "%l/%L  : %c"
 
 "set statusline=
 "set statusline+=%{mode()}
