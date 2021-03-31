@@ -218,6 +218,8 @@ set wildmenu
 " Leader for closing buffers
 map <Leader>b :bd<CR>
 
+let g:rust_clip_command = 'xclip -selection clipboard'
+
 " Create method stub
 function! CreateMethodStub()
   let return_string = ''
