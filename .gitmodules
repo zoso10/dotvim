@@ -58,3 +58,6 @@
 [submodule "pack/plugins/start/codi.vim"]
 	path = pack/plugins/start/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
+[submodule "pack/plugins/start/rust.vim"]
+	path = pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
