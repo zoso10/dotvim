@@ -155,8 +155,8 @@ autocmd BufNewFile *.rb :normal i# frozen_string_literal: true
 " Fix indentation for <li> and <p> tags
 let g:html_indent_tags = 'li\|p'
 
-" Leader for generating ctags
-map <Leader>c :!ctags -R --exclude=app/assets/javascripts --exclude=.git --exclude=spec/javascripts --exclude=db --exclude=tmp --exclude=vendor/assets. --exclude=node_modules<CR><CR>
+" Leader for generating tags with either ripper-tags or ctags
+map <Leader>c :!if ripper-tags -R &> /dev/null; then; echo 'ripper-tags succeeded'; else; ctags -R --exclude=app/assets/javascripts --exclude=.git --exclude=spec/javascripts --exclude=db --exclude=tmp --exclude=vendor --exclude=node_modules; fi<CR><CR>
 
 " Treat .rabl as .rb
 au BufRead,BufNewFile *.rabl setf ruby
