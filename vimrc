@@ -110,10 +110,12 @@ let g:ruby_path="~/.rvm/bin/ruby"
 " Rspec send to tmux
 let g:rspec_command='call Send_to_Tmux("ber {spec}\n")'
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>n :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
+" Test runner mappings
+let test#strategy = "tslime"
+let g:test#preserve_screen = 1
+nmap <silent> <Leader>t :TestFile<CR>
+nmap <silent> <Leader>n :TestNearest<CR>
+nmap <silent> <Leader>l :TestLast<CR>
 
 " Mappings for Rake
 function! RunRubocopOnCurrentFile()

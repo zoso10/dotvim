@@ -64,3 +64,6 @@
 [submodule "pack/plugins/start/vim-rhubarb"]
 	path = pack/plugins/start/vim-rhubarb
 	url = git@github.com:tpope/vim-rhubarb.git
+[submodule "pack/plugins/start/vim-test"]
+	path = pack/plugins/start/vim-test
+	url = https://github.com/vim-test/vim-test
